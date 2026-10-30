@@ -1,12 +1,15 @@
 import type { NextConfig } from "next";
 
-const isProd = process.env.NODE_ENV === "production";
+// basePath is only needed for GitHub Pages, which serves the site from
+// /<repo>/. On Vercel (or any host serving from the domain root) it must be
+// empty, or the root URL 404s.
+const isGitHubPages = process.env.GITHUB_ACTIONS === "true";
 const repo = "/hackathon-demo";
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: isProd ? repo : "",
-  assetPrefix: isProd ? repo : "",
+  basePath: isGitHubPages ? repo : "",
+  assetPrefix: isGitHubPages ? repo : "",
   trailingSlash: true,
   images: { unoptimized: true },
   turbopack: {

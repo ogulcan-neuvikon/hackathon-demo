@@ -253,7 +253,7 @@ export default function QuotePage() {
             <div className="rounded-3xl bg-[#15201c] p-6 text-[#f6f5f2] shadow-xl shadow-[#15201c]/10">
               <p className="text-xs font-medium uppercase tracking-[0.16em] text-[#f6f5f2]/55">Your estimate</p>
               <div className="mt-4 flex items-end gap-1.5">
-                <span className="text-5xl font-semibold tracking-tight tabular-nums">{money(quote.monthly)}</span>
+                <span className="text-5xl font-semibold tracking-tight tabular-nums text-red-500">{money(quote.monthly)}</span>
                 <span className="pb-1.5 text-sm text-[#f6f5f2]/60">/mo</span>
               </div>
               <p className="mt-1.5 text-[13px] text-[#f6f5f2]/60">
@@ -324,7 +324,7 @@ function Row({ k, v }: { k: string; v: string }) {
   return (
     <div className="flex items-center justify-between gap-4">
       <dt className="text-[#f6f5f2]/55">{k}</dt>
-      <dd className="text-right font-medium">{v}</dd>
+      <dd className="text-right font-medium text-red-500">{v}</dd>
     </div>
   );
 }

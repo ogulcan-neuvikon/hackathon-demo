@@ -94,7 +94,7 @@ export default function QuotePage() {
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#2f7d5d]">Step 2 of 3</p>
           <h1 className="mt-3 text-4xl font-semibold tracking-tight sm:text-[2.75rem]">Build your auto quote</h1>
           <p className="mt-3 text-[15px] leading-relaxed text-[#15201c]/65">
-            Adjust the details below and your premium recalculates instantly. No credit check, no commitment.
+            Update any detail below to see your premium change in real time. There's no credit check and no commitment.
           </p>
         </div>
 

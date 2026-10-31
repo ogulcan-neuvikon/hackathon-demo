@@ -92,7 +92,7 @@ export default function QuotePage() {
       <div className="mx-auto max-w-6xl px-6 py-10 sm:py-14">
         <div className="max-w-xl">
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#2f7d5d]">Step 2 of 3</p>
-          <h1 className="mt-3 text-4xl font-semibold tracking-tight sm:text-[2.75rem]">Build your auto quote</h1>
+          <h1 className="mt-3 bg-gradient-to-r from-[#15201c] to-[#2f7d5d] bg-clip-text text-4xl font-semibold tracking-tight text-transparent sm:text-[2.75rem]">Build your auto quote</h1>
           <p className="mt-3 text-[15px] leading-relaxed text-[#15201c]/65">
             Adjust the details below and your premium recalculates instantly. No credit check, no commitment.
           </p>
